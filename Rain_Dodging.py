@@ -18,10 +18,13 @@ PLAYER_VEL = 15
 FPS = 60
 
 
-def draw(player):
+def draw(player, elapsed_time, stars):
     WIN.blit(BG, (0, 0))
 
     pygame.draw.rect(WIN, "white", player)
+
+    for star in stars:
+        pygame.draw.rect(WIN, "blue", star)
 
     pygame.display.update()
 

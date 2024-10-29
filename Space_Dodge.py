@@ -35,7 +35,7 @@ def draw(player, elapsed_time, stars):
 
 def main():
     run = True
-    
+
     player = pygame.Rect(500, HEIGHT-PLAYER_HEIGHT, PLAYER_WIDTH, PLAYER_HEIGHT)
     
     clock = pygame.time.Clock()
